@@ -1,0 +1,46 @@
+.container {
+  height: 100%;
+  margin: 30px;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.timeline {
+  height: 5px;
+  position: relative;
+
+  &,
+  &::after,
+  &::before {
+    background-color: var(--timeline-primary);
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 5px;
+    top: calc(-50% - 7px);
+  }
+  &::after {
+    right: 0;
+  }
+
+  &::before {
+    left: 0;
+  }
+}
+
+.timeline-container {
+  max-width: 100%;
+  position: relative;
+}

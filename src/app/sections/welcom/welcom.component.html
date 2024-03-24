@@ -1,0 +1,31 @@
+<header class="container" id="welcome">
+  <h1>
+    <strong>Łukasz Milewski</strong> <br />
+    <span>Software developer</span>
+  </h1>
+  <div class="background-box"></div>
+  <div class="social-box">
+    <div class="link">
+      <a href="https://www.linkedin.com/in/luki-m/">
+        <img class="icon" src="/assets/linkedin.png" aria-hidden="true" />
+        <span class="sr-only">LinkedIn</span>
+      </a>
+    </div>
+    <div class="link">
+      <a href="https://github.com/magik9907">
+        <img class="icon" src="/assets/github-white.png" aria-hidden="true" />
+        <span class="sr-only">Github</span>
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <a [appActiveFragmentLink]="'about'" class="about"><li>About me</li></a>
+      <a [appActiveFragmentLink]="'skills'" class="skills"><li>Skill</li></a>
+      <a [appActiveFragmentLink]="'experiance'" class="experience"
+        ><li>Experience</li></a
+      >
+    </ul>
+  </nav>
+</header>

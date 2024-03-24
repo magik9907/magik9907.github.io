@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main: #101137;
+  --color: #c9e6ff;
+  --border-color: #c9e6ff;
+  --background-main: #0e0e0e;
+  --background-opacity: #040527a6;
+
+  --timeline-primary: rgb(0, 187, 0);
+  --timeline-point: rgb(255, 220, 64);
+  --timeline-background: rgb(255, 220, 64);
+  --timeline-color: rgb(0, 0, 0);
+}
+
+* {
+  font-family: math;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background-main);
+
+  &,
+  a {
+    color: var(--color);
+  }
+
+  &,
+  & body {
+    height: 100%;
+    margin: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  left: -100000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,118 @@
+h1 {
+  transform: translate(-20vw, -20vh);
+  text-align: right;
+  font-size: 2.5rem;
+  width: 30vw;
+  padding: 10vh 45px;
+  background-color: var(--background-opacity);
+
+  @media (max-width: 700) {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 0.8em;
+  }
+
+  strong {
+    text-transform: uppercase;
+  }
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template: "about skills experiance";
+    list-style: none;
+    gap: 2px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.5rem;
+
+    @media (max-width: 600px) {
+      grid-template:
+        "about about" auto
+        "skills experiance" auto / 1fr 1fr;
+    }
+
+    li {
+      transition: background-color 0.3s;
+      background-color: var(--background-opacity);
+      text-align: center;
+      padding: 16px 0;
+      line-height: 64px;
+      &:hover {
+        background-color: var(--main);
+      }
+    }
+
+    .active li {
+      background-color: var(--main);
+    }
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.social-box,
+.background-box {
+  background-color: var(--main);
+  width: 30vw;
+  height: 30vh;
+  position: absolute;
+  z-index: -10;
+}
+.background-box {
+  top: 0;
+  right: 0;
+}
+
+.skills {
+  grid-area: skills;
+}
+.about {
+  grid-area: about;
+}
+.experiance {
+  grid-area: experiance;
+}
+.icon {
+  width: 44px;
+  height: 44px;
+}
+
+.social-box {
+  top: 35%;
+  right: 43%;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    justify-content: unset;
+  }
+
+  .link {
+    position: relative;
+    z-index: 200;
+    margin: 10%;
+  }
+
+  a {
+    display: block;
+  }
+}

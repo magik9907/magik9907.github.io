@@ -1,0 +1,23 @@
+div:not(.back-nav) {
+  margin-bottom: 46px;
+}
+.back-nav {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    background: var(--main);
+    transform: rotateZ(-90deg);
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    &:hover {
+      border: 1px solid var(--border-color);
+    }
+  }
+}

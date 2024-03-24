@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="timeline-container">
+    <div class="timeline" [ngStyle]="{ 'width.px': timelineWidth }"></div>
+    @for(event of (events() | pure: sort);track event.title;let idx = $index){
+    <app-period-presentation-item [item]="event" [index]="idx" />
+    }
+  </div>
+</div>
