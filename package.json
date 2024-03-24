@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "npm build & copy \"./docs/browser\" \"./docs\" & rm \"./docs/browser\" &  git add docs/* & git commit  \"deploy\" & git push"
+    "deploy": "npm run build & copy \"./docs/browser\" \"./docs\" & rmdir /S /Q \"./docs/browser\" &  git add ./docs/* & git commit  -m 'deploy' & git push "
   },
   "private": true,
   "dependencies": {
