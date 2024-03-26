@@ -1,0 +1,30 @@
+{
+  "title": "A system for managing orders in a service company",
+  "images": [
+    "/assets/managing-orders/login.png",
+    "/assets/managing-orders/table.png",
+    "/assets/managing-orders/job.png"
+  ],
+  "group": false,
+  "role": "Full-stack developer",
+  "technology": [
+    "TypeScript",
+    "Angular",
+    "Java",
+    "PrimeNG",
+    "Spring Boot",
+    "Keycloak",
+    "Docker",
+    "PostgreSQL",
+    "Keycloak"
+  ],
+  "description": [
+    "Thesis. The project is intended for the company where the services are located. The goal is to support the company in order management, including: optimization of employee schedules."
+  ],
+  "functionalities": [
+    "Managing accounts",
+    "Managing order",
+    "Automatic job scheduling",
+    "Reports"
+  ]
+}
