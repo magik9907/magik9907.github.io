@@ -1,0 +1,17 @@
+@if(sources().length){
+<div class="presentation">
+  <img [src]="currentSource()" />
+</div>
+<div class="container">
+  @for(s of sources(); track s; let idx = $index){
+  <button
+    (click)="setImage(idx)"
+    type="button"
+    aria-label="Change project picture"
+  >
+    <img [src]="s" [ngClass]="{ active: idx === current() }" />
+  </button>
+
+  }
+</div>
+}

@@ -1,0 +1,25 @@
+{
+  "title": "k-NN Classification Tool",
+  "images": [
+    "/assets/knn-classification-tool/load.png",
+    "/assets/knn-classification-tool/table.png",
+    "/assets/knn-classification-tool/vizualization.png",
+    "/assets/knn-classification-tool/table.png",
+    "/assets/knn-classification-tool/histogram.png"
+  ],
+  "group": true,
+  "role": "Software developer",
+  "technology": ["Flutter", "Dart"],
+  "description": [
+    "Data classification tool using the k-nearest neighbors algorithm and 4 different metrics (Euclidean, Manhattan, Czybyshev, Mahalanobis). It allows you to load CSV data and perform preprocessing - normalization, discretization. Additionally, it allows for visualization - a histogram, the location of points on a 2D chart and the assigned class. ",
+    "The main goal is to enable the classification of new elements and verify the quality of the classification based on the dataset for different values ​​​​of k.",
+    "I was responsible for implementing some functions related to data preprocessing and the kNN algorithm (including testing the classification quality)."
+  ],
+  "functionalities": [
+    "Data preprocessing",
+    "Classification",
+    "Statistics",
+    "Visualisation",
+    "Classification quality check"
+  ]
+}

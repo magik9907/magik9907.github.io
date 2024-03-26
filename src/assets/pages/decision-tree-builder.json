@@ -1,0 +1,28 @@
+{
+  "title": "Decision Tree Builder",
+  "images": [
+    "/assets/decision-tree-builder/home.png",
+    "/assets/decision-tree-builder/import.png",
+    "/assets/decision-tree-builder/tree.png"
+  ],
+  "group": true,
+  "role": "Front-end developer",
+  "technology": [
+    "TypeScript",
+    "React",
+    "ReactFlow",
+    "Material UI",
+    "Python",
+    "NGINX",
+    "Docker"
+  ],
+  "description": [
+    "A tool for building a decision tree and its visualization based on data files. The tool allows you to build entire trees based on selected parameters and view information from individual nodes as well as modify the selected subtree.",
+    "My task was to implement functionality on the browser side, including: integration with the ReactFlow library, API integration, NGINX configuration and docker for the front-end."
+  ],
+  "functionalities": [
+    "Tree visualization",
+    "Tree modification",
+    "Tree data overview"
+  ]
+}

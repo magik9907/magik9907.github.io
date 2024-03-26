@@ -1,13 +1,15 @@
-import { Component, input } from '@angular/core';
-import { DatePipe } from '@angular/common';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { PeriodPresentation } from '../../../../types';
 import { PurePipe } from '../../../pipe/pure.pipe';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-period-presentation-item',
   standalone: true,
-  imports: [DatePipe, PurePipe, MatIconModule],
+  imports: [CommonModule, PurePipe, MatIconModule, RouterModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './period-presentation-item.component.html',
   styleUrl: './period-presentation-item.component.scss',
 })

@@ -7,5 +7,16 @@ export interface PeriodPresentation {
   color?: string;
   background?: string;
   icon: string;
+  link?: string;
 }
 export type PeriodPresentations = PeriodPresentation[];
+
+export interface Project {
+  title: string;
+  images: string[];
+  group: boolean;
+  role: string;
+  technology: string[];
+  description: string[];
+  functionalities: string[];
+}

@@ -1,0 +1,29 @@
+@if(content()?.['content']; as c){
+<section>
+  <div>
+    <h2>{{ c.title }}</h2>
+    <p class="title">
+      Role: <strong>{{ c.role }}</strong>
+    </p>
+    @if(c.group){
+    <p class="title">Group project</p>
+    }
+    <div>
+      <p class="title">Technology</p>
+      <ul>
+        @for( technology of c.technology; track technology){
+        <li>{{ technology }}</li>
+        }
+      </ul>
+    </div>
+
+    <div>
+      <p class="title">Description</p>
+      @for( description of c.description; track description){
+      <p>{{ description }}</p>
+      }
+    </div>
+  </div>
+  <app-img-slider [sources]="c.images"></app-img-slider>
+</section>
+}

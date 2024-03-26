@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PeriodPresentationComponent } from '../../components/period-presentation/period-presentation/period-presentation.component';
 import { PeriodPresentations } from '../../../types';
 
@@ -6,6 +6,7 @@ import { PeriodPresentations } from '../../../types';
   selector: 'app-experiance',
   standalone: true,
   imports: [PeriodPresentationComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './experiance.component.html',
   styleUrl: './experiance.component.scss',
 })
@@ -63,6 +64,7 @@ export class ExperianceComponent {
       color: 'white',
       order: 5,
       icon: 'build',
+      link: 'decision-tree-builder',
     },
     {
       date: { start: new Date('2023-10-01'), end: new Date('2024-01-30') },
@@ -74,6 +76,7 @@ export class ExperianceComponent {
       color: 'white',
       order: 6,
       icon: 'build',
+      link: 'knn-classification-tool',
     },
     {
       date: { start: new Date('2021-11-01'), end: new Date('2023-01-30') },
@@ -85,6 +88,7 @@ export class ExperianceComponent {
       color: 'white',
       order: 3,
       icon: 'build',
+      link: 'managing-orders',
     },
   ];
 }

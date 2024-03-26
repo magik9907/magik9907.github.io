@@ -28,6 +28,10 @@
     font-size: 1.25rem;
   }
 
+  p {
+    padding: 4px;
+  }
+
   &.top {
     top: -340px;
 
@@ -62,4 +66,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  > div {
+    &:hover {
+      border: 1px solid var(--border-color);
+    }
+  }
+}
+
+a:focus {
+  > div {
+    border: 1px solid var(--border-color);
+  }
 }

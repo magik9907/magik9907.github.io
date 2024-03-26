@@ -1,29 +1,40 @@
-<div
-  [classList]="'timeline-item ' + item().position"
-  [style]="{
-    left: index() | pure : positionCalculate,
-    background: item().background,
-    color: item().color,
-    'box-shadow': '0px 0 10px 4px ' + item().background
-  }"
->
-  <div class="flex">
-    <div class="center">
-      <mat-icon aria-hidden="true">{{ item().icon }}</mat-icon>
-    </div>
-    <h3>{{ item().title }}</h3>
-  </div>
-  <p class="date-container">
-    <span class="date">{{ item().date.start | date : "MM-YYYY" }}</span>
-    @if(item().date.end; as endDate ){ -
-    <span class="date">{{ endDate | date : "MM-YYYY" }}</span> }
-  </p>
-  <p>{{ item().description }}</p>
+@if (item().link; as link){
+<a [routerLink]="['project', link]" fragment="v">
+  <ng-content *ngTemplateOutlet="view" />
+</a>
+}@else{
+<ng-content *ngTemplateOutlet="view" />
 
+}
+
+<ng-template #view>
   <div
-    class="point"
+    [classList]="'timeline-item ' + item().position"
     [style]="{
+      left: index() | pure : positionCalculate,
+      background: item().background,
+      color: item().color,
+      'box-shadow': '0px 0 10px 4px ' + item().background
+    }"
+  >
+    <div class="flex">
+      <div class="center">
+        <mat-icon aria-hidden="true">{{ item().icon }}</mat-icon>
+      </div>
+      <h3>{{ item().title }}</h3>
+    </div>
+    <p class="date-container">
+      <span class="date">{{ item().date.start | date : "MM-YYYY" }}</span>
+      @if(item().date.end; as endDate ){ -
+      <span class="date">{{ endDate | date : "MM-YYYY" }}</span> }
+    </p>
+    <p>{{ item().description }}</p>
+
+    <div
+      class="point"
+      [style]="{
       'background-color': item().background,
     }"
-  ></div>
-</div>
+    ></div>
+  </div>
+</ng-template>

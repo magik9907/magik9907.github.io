@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { NgStyle } from '@angular/common';
 import { PeriodPresentations } from '../../../../types';
 import { PeriodPresentationItemComponent } from '../period-presentation-item/period-presentation-item.component';
@@ -9,6 +9,7 @@ import { PurePipe } from '../../../pipe/pure.pipe';
   standalone: true,
   imports: [PeriodPresentationItemComponent, PurePipe, NgStyle],
   templateUrl: './period-presentation.component.html',
+  changeDetection:ChangeDetectionStrategy.OnPush,
   styleUrl: './period-presentation.component.scss',
 })
 export class PeriodPresentationComponent {
