@@ -1,6 +1,14 @@
-div:not(.back-nav) {
-  margin-bottom: 46px;
+div {
+  &:not(.back-nav) {
+    min-height: 100vh;
+    margin-bottom: 70px;
+  }
 }
+
+div.router {
+  min-height: unset;
+}
+
 .back-nav {
   position: fixed;
   bottom: 2vh;

@@ -21,7 +21,12 @@
       <div class="center">
         <mat-icon aria-hidden="true">{{ item().icon }}</mat-icon>
       </div>
-      <h3>{{ item().title }}</h3>
+      <div>
+        <h3>{{ item().title }}</h3>
+        @if(item().subtitle){
+        <h4>{{ item().subtitle }}</h4>
+        }
+      </div>
     </div>
     <p class="date-container">
       <span class="date">{{ item().date.start | date : "MM-YYYY" }}</span>

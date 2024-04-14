@@ -16,7 +16,14 @@
         }
       </ul>
     </div>
-
+    <div>
+      <p class="title">Functionalities</p>
+      <ul>
+        @for( functionality of c.functionalities; track functionality){
+        <li>{{ functionality }}</li>
+        }
+      </ul>
+    </div>
     <div>
       <p class="title">Description</p>
       @for( description of c.description; track description){

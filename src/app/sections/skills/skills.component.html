@@ -1,3 +1,38 @@
 <section id="skills">
   <h2>Skills</h2>
+  <div class="grid">
+    <div>
+      <app-list-container
+        [elements]="['Angular2+', 'React', 'CSS', 'SCSS', 'HTML']"
+        title="Frontend"
+        background="#f16a30"
+        color="white"
+      ></app-list-container>
+    </div>
+    <div>
+      <app-list-container
+        [elements]="[
+          'Java',
+          'SpringBoot',
+          'NodeJS',
+          'ExpressJS',
+          'SQL',
+          'JavaScript',
+          'TypeScript',
+          'Maven'
+        ]"
+        background="#6da268"
+        color="#393939"
+        title="Backend"
+      ></app-list-container>
+    </div>
+    <div>
+      <app-list-container
+        [elements]="['IntelliJ IDEA', 'VS Code', 'Postman', 'GIT', 'Docker']"
+        background="#1a80f1"
+        color="#080808"
+        title="Tools"
+      ></app-list-container>
+    </div>
+  </div>
 </section>

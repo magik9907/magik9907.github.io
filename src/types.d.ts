@@ -1,6 +1,7 @@
 export interface PeriodPresentation {
   date: { start: Date; end?: Date };
   title: string;
+  subtitle?: string;
   description: string;
   position: 'bottom' | 'top';
   order: number;

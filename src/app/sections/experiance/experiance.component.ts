@@ -35,6 +35,7 @@ export class ExperianceComponent {
     {
       date: { start: new Date('2023-02-01'), end: new Date('2024-06-30') },
       title: 'Master in Computer Science',
+      subtitle: 'Software engineering',
       description:
         'Expanding knowledge about programming and the use of various techniques for data processing.',
       position: 'top',

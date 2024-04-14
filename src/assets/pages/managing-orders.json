@@ -15,8 +15,7 @@
     "Spring Boot",
     "Keycloak",
     "Docker",
-    "PostgreSQL",
-    "Keycloak"
+    "PostgreSQL"
   ],
   "description": [
     "Thesis. The project is intended for the company where the services are located. The goal is to support the company in order management, including: optimization of employee schedules."

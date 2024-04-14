@@ -1,7 +1,27 @@
 #skills {
-  height: 100vh;
+  // height: 100vh;
 }
 
 h2 {
   text-align: center;
+}
+
+.grid {
+  height: calc(100% - 100px);
+  margin: 16px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+
+  @media (min-width: 978px) {
+    padding-top: 64px;
+  }
+
+  div:last-child {
+    margin-top: 64px;
+    @media (max-width: 662px) or (min-width: 978px) {
+      margin-top: unset;
+    }
+  }
 }

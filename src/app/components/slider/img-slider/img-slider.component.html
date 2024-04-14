@@ -3,13 +3,13 @@
   <img [src]="currentSource()" />
 </div>
 <div class="container">
-  @for(s of sources(); track s; let idx = $index){
+  @for(src of sources(); track src; let idx = $index){
   <button
     (click)="setImage(idx)"
     type="button"
     aria-label="Change project picture"
   >
-    <img [src]="s" [ngClass]="{ active: idx === current() }" />
+    <img [src]="src" [ngClass]="{ active: idx === current() }" />
   </button>
 
   }

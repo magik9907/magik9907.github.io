@@ -1,6 +1,42 @@
-#about{
-  height: 100vh;;
+#about {
+  // height: 100vh;
 }
-h2{
+
+h2 {
   text-align: center;
+}
+
+.container {
+  .item {
+    display: flex;
+
+    div {
+      background-color: var(--background-opacity);
+      margin-top: 32px;
+      width: 50%;
+      padding: 16px 32px;
+      text-align: justify;
+
+      @media (max-width: 700px) {
+        width: 80vw;
+      }
+
+      p,
+      li {
+        font-size: 1.4rem;
+      }
+      .title {
+        text-align: right;
+        font-size: 2rem;
+      }
+    }
+
+    &:nth-child(even) {
+      justify-content: right;
+
+      div .title {
+        text-align: left;
+      }
+    }
+  }
 }
