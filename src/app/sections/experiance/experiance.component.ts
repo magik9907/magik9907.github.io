@@ -23,9 +23,9 @@ export class ExperianceComponent {
     },
     {
       date: { start: new Date('2019-10-01'), end: new Date('2023-01-30') },
-      title: 'Bawechelor in Computer Science',
+      title: 'Bachelor in Computer Science',
       description:
-        'Developing knowledge primarily in software development, but also other skills.',
+        'Focusing on enhancing expertise in software development while also diversifying skills in various other domains.',
       position: 'top',
       background: '#012404',
       color: 'white',
