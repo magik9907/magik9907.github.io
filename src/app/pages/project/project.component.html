@@ -1,5 +1,5 @@
 @if(content()?.['content']; as c){
-<section>
+<section [class.single-column]="!c.images">
   <div>
     <h2>{{ c.title }}</h2>
     <p class="title">
@@ -16,6 +16,7 @@
         }
       </ul>
     </div>
+    @if (c.functionalities) {
     <div>
       <p class="title">Functionalities</p>
       <ul>
@@ -24,6 +25,7 @@
         }
       </ul>
     </div>
+    }
     <div>
       <p class="title">Description</p>
       @for( description of c.description; track description){
@@ -31,6 +33,8 @@
       }
     </div>
   </div>
+  @if (c.images) {
   <app-img-slider [sources]="c.images"></app-img-slider>
+  }
 </section>
 }

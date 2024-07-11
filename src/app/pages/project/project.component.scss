@@ -8,6 +8,10 @@ section {
     padding: 16px;
     grid-template-columns: 1fr;
   }
+
+  &.single-column {
+    grid-template-columns: 1fr;
+  }
 }
 
 h2 {

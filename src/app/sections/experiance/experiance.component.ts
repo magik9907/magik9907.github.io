@@ -91,5 +91,18 @@ export class ExperianceComponent {
       icon: 'build',
       link: 'managing-orders',
     },
+    {
+      date: { start: new Date('2023-11-01'), end: new Date('2024-06-30') },
+      title:
+        'Clustering-based neighbourhood in session-based recommender systems',
+      description:
+        'Comparing collaborative model of session-based recomender system that used k-NN and clustering algorithms.',
+      position: 'bottom',
+      background: '#012404',
+      color: 'white',
+      order: 7,
+      icon: 'build',
+      link: 'cluster-rec-sys',
+    },
   ];
 }
