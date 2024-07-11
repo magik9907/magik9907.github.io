@@ -1,0 +1,14 @@
+{
+  "title": "Clustering-based neighbourhood in session-based recommender systems",
+  "group": false,
+  "role": "Software engineer",
+  "technology": [
+    "python",
+    "clustering algorithms",
+    "k-nearest neighbors",
+    "session-based recommendation systems"
+  ],
+  "description": [
+    "This master's thesis compares approaches using the k-nearest neighbors algorithm and clustering algorithms to determine session neighborhoods. The study employs the Vector Multiplication Session-Based kNN (VS-kNN) algorithm, which emphasizes more recent events in session history. Clustering algorithms, specifically K-Means and HDBScan, were integrated with the VS-kNN algorithm. These clustering algorithms were used to group the training set to combine similar sessions and identify patterns in the data. The result of the thesis is a comparison of the performance of these methods in terms of the quality and diversity of recommendations."
+  ]
+}
